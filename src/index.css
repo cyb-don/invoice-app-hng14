@@ -127,8 +127,8 @@ body {
 
 .nav-logo svg,
 .nav-logo img {
-  width: 28px;
-  height: 28px;
+  width: 68px;
+  height: 68px;
   position: relative;
   z-index: 1;
 }
@@ -1343,7 +1343,6 @@ body {
     padding: 48px;
   }
 }
-
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;

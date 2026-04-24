@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import heroImg from "../assets/hero-image.svg";
 
 export default function Header({ onAdd, invoiceCount }) {
   const context = useContext(ThemeContext);
@@ -14,21 +15,9 @@ export default function Header({ onAdd, invoiceCount }) {
   return (
     <nav className="app-nav">
       <div className="nav-logo" aria-label="Invoice App">
-        <svg width="28" height="26" viewBox="0 0 28 26" fill="none">
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M20.5145 0L27.9999 13L20.5145 26H13.9999L21.4853 13L13.9999 0H20.5145Z"
-            fill="white"
-          />
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M13.5146 0L21.0001 13L13.5146 26H6.99999L14.4854 13L6.99999 0H13.5146Z"
-            fill="white"
-            fillOpacity="0.5"
-          />
-        </svg>
+        <img width="28" height="26" src={heroImg} alt="logo image" />
+
+       
       </div>
 
       <div className="nav-spacer" />
