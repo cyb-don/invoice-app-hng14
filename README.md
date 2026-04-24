@@ -1,16 +1,93 @@
-# React + Vite
+# Invoice App — HNG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive invoice management app built with React 19 and Vite. It supports creating, editing, deleting, and filtering invoices, with data stored in `localStorage` and a light/dark theme.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Setup
 
-## React Compiler
+### Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Node.js (v18+)
+* npm (v9+)
 
-## Expanding the ESLint configuration
+### Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+cd invoice-app-hng
+npm install
+npm run dev
+```
+
+Runs on `http://localhost:5173`.
+
+### Scripts
+
+* `npm run dev` – start dev server
+* `npm run build` – build for production
+* `npm run preview` – preview build
+* `npm run lint` – run linter
+
+---
+
+## Architecture
+
+Single-page React app without a routing library. Navigation is handled with component state.
+
+### Structure
+
+* `components/` – UI (list, form, modal, etc.)
+* `context/` – theme handling
+* `data/` – seed data
+* `utils/` – localStorage helpers
+* `App.jsx` – main state and view control
+
+### State
+
+All invoices live in `App`. Filtering is derived state. No external state libraries used.
+
+### Navigation
+
+Controlled by `view` state (`list`, `detail`, `form`). No URL routing.
+
+### Persistence
+
+Invoices and theme preference are saved in `localStorage`. Seed data loads on first run.
+
+### Styling
+
+Single CSS file using custom properties and responsive breakpoints.
+
+---
+
+## Trade-offs
+
+* Global CSS instead of scoped styles
+* No URL routing (no deep linking/history)
+* Uses `localStorage` instead of a backend
+* Simple ID generation (possible collisions)
+* Seed data doesn’t update after first load
+* Dates not fully recalculated on edit
+
+---
+
+## Accessibility
+
+* Keyboard navigation for invoice items
+* ARIA labels on icon buttons
+* Modal focus trapping and escape support
+* Proper dialog roles
+* Decorative elements hidden from screen readers
+* Clear heading structure
+
+---
+
+## Extras
+
+* Persistent dark mode
+* Inline form validation
+* Responsive layouts
+* Empty state UI
+* Click-outside dropdown handling
+* Overlay click to close form
+* Auto-calculated totals
