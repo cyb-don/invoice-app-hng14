@@ -101,5 +101,133 @@
       }
     ],
     "total": 102.04
+  },
+  {
+    "id": "DB1204",
+    "createdAt": "12 Jan 2022",
+    "paymentDue": "19 Jan 2022",
+    "description": "Website Redesign",
+    "paymentTerms": 7,
+    "clientName": "Michael Scott",
+    "clientEmail": "michael@dundermifflin.com",
+    "status": "paid",
+    "senderAddress": {
+      "street": "45 Market Street",
+      "city": "Manchester",
+      "postCode": "M1 2AB",
+      "country": "United Kingdom"
+    },
+    "clientAddress": {
+      "street": "172 Scranton Rd",
+      "city": "Scranton",
+      "postCode": "18503",
+      "country": "United States"
+    },
+    "items": [
+      {
+        "id": "item-5",
+        "name": "UI Design",
+        "quantity": 2,
+        "price": 350.00,
+        "total": 700.00
+      }
+    ],
+    "total": 700.00
+  },
+  {
+    "id": "KD5678",
+    "createdAt": "03 Feb 2022",
+    "paymentDue": "03 Mar 2022",
+    "description": "Mobile App Design",
+    "paymentTerms": 30,
+    "clientName": "Sarah Connor",
+    "clientEmail": "sarah@skynet.com",
+    "status": "pending",
+    "senderAddress": {
+      "street": "78 King Street",
+      "city": "Birmingham",
+      "postCode": "B1 1AA",
+      "country": "United Kingdom"
+    },
+    "clientAddress": {
+      "street": "42 Future Lane",
+      "city": "Los Angeles",
+      "postCode": "90001",
+      "country": "United States"
+    },
+    "items": [
+      {
+        "id": "item-6",
+        "name": "App Wireframes",
+        "quantity": 3,
+        "price": 120.00,
+        "total": 360.00
+      }
+    ],
+    "total": 360.00
+  },
+  {
+    "id": "PX9012",
+    "createdAt": "15 Mar 2022",
+    "paymentDue": "22 Mar 2022",
+    "description": "SEO Optimization",
+    "paymentTerms": 7,
+    "clientName": "John Doe",
+    "clientEmail": "john@example.com",
+    "status": "draft",
+    "senderAddress": {
+      "street": "12 Baker Street",
+      "city": "London",
+      "postCode": "NW1 6XE",
+      "country": "United Kingdom"
+    },
+    "clientAddress": {
+      "street": "221B Baker Street",
+      "city": "London",
+      "postCode": "NW1 6XE",
+      "country": "United Kingdom"
+    },
+    "items": [
+      {
+        "id": "item-7",
+        "name": "Keyword Research",
+        "quantity": 1,
+        "price": 250.00,
+        "total": 250.00
+      }
+    ],
+    "total": 250.00
+  },
+  {
+    "id": "LM3456",
+    "createdAt": "20 Apr 2022",
+    "paymentDue": "27 Apr 2022",
+    "description": "Content Writing",
+    "paymentTerms": 7,
+    "clientName": "Emily Clark",
+    "clientEmail": "emily.clark@mail.com",
+    "status": "paid",
+    "senderAddress": {
+      "street": "90 High Street",
+      "city": "Leeds",
+      "postCode": "LS1 4AP",
+      "country": "United Kingdom"
+    },
+    "clientAddress": {
+      "street": "15 Green Lane",
+      "city": "Leeds",
+      "postCode": "LS2 8JT",
+      "country": "United Kingdom"
+    },
+    "items": [
+      {
+        "id": "item-8",
+        "name": "Blog Articles",
+        "quantity": 4,
+        "price": 75.00,
+        "total": 300.00
+      }
+    ],
+    "total": 300.00
   }
 ]

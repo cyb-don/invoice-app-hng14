@@ -13,7 +13,6 @@ export default function Header({ onAdd, invoiceCount }) {
 
   return (
     <nav className="app-nav">
-
       <div className="nav-logo" aria-label="Invoice App">
         <svg width="28" height="26" viewBox="0 0 28 26" fill="none">
           <path
@@ -58,7 +57,7 @@ export default function Header({ onAdd, invoiceCount }) {
 
       <img
         className="nav-avatar"
-        src="https://i.etsystatic.com/16060308/r/il/609fcc/5794474076/il_570xN.5794474076_sjvq.jpg"
+        src="https://w0.peakpx.com/wallpaper/655/15/HD-wallpaper-baby-groot-in-suit-anime-baby-groot-guardians-of-the-galaxy-huawei-iphone-oneplus-samsung-sony-xiaomi.jpg"
         alt="User avatar"
       />
     </nav>
